@@ -5,6 +5,14 @@ describe('Fix the Scope', function() {
     });
   });
 
+
+//function FixtheScope(){
+//let customerName = "bob"
+//customerName
+//}
+
+
+
   describe('upperCaseCustomerName()', function() {
     it('modifies the customerName variable', function() {
       expect(window.customerName).to.equal('bob');
@@ -14,6 +22,21 @@ describe('Fix the Scope', function() {
       expect(window.customerName).to.equal('BOB');
     });
   });
+
+//function FixtheScope(){
+//let customerName = "bob"
+//customerName
+//function upperCaseCustomerName(){
+//customerName.toUpperCase()
+//}
+// upperCaseCustomerName();
+// let bestCustomer = "barnes"
+
+//}
+
+
+
+
   describe('setBestCustomer()', function() {
     it('setBestCustomer', function() {
       expect(window.bestCustomer).to.equal(undefined);
@@ -24,6 +47,35 @@ describe('Fix the Scope', function() {
     });
   });
 
+
+
+//function FixtheScope(){
+//let customerName = "bob"
+
+//customerName
+
+//function upperCaseCustomerName(){
+//customerName.toUpperCase()
+//}
+
+// upperCaseCustomerName();
+
+//function setBestCustomer(){
+//BestCustomer = 'not bob'
+//}
+
+//setBestCustomer()
+//}
+
+
+
+
+
+
+
+
+
+
   describe('overwriteBestCustomer()', function() {
     it('overwrites the best customer', function() {
       overwriteBestCustomer('maybe bob');
@@ -31,6 +83,51 @@ describe('Fix the Scope', function() {
       expect(window.bestCustomer).to.equal('maybe bob');
     });
   });
+
+
+//function FixtheScope(){
+//let customerName = "bob"
+
+//customerName
+
+//function upperCaseCustomerName(){
+//customerName.toUpperCase()
+//}
+
+// upperCaseCustomerName();
+
+//function setBestCustomer(){
+//BestCustomer = 'not bob'
+//}
+
+//setBestCustomer()
+
+//function overwriteBestCustomer () {
+//bestCustomer = 'maybe bob'
+//}
+
+//overwriteBestCustomer ()
+
+//function changeLeastFavoriteCustomer () {
+//leastFavoriteCustomer = 'billy'
+//} 
+
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   describe('changeLeastFavoriteCustomer()', function() {
     it('unsuccessfully tries to reassign the least favorite customer', function() {
